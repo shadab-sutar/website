@@ -1,0 +1,63 @@
+.wrapper{
+  margin:0px;
+  padding:0px;
+  border:0px;
+  height: 100%;
+  width: 100%;
+  color:#5e5f60;
+}
+
+.primary-color{
+  color:#4286f4;
+}
+
+.banner{
+  height: 400px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#title{
+  text-align: center;
+  position: relative;
+  top: 10%;
+}
+.title{
+  font-size: 100px;
+}
+
+.profile-image{
+  width: 75%;
+  height: 60%;
+  border-radius: 55%;
+  margin: 20px;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.social-media{
+  font-size: 30px;
+}
+
+.social-media > a{
+  margin-left: 20px;
+  color: #5e5f60;
+}
+
+.social-media > a:hover{
+  color: #4286f4;
+}
+
+.main-content{
+  height: 400px;
+  width: 90%;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+.footer{
+  height: 400px;
+  width: 90%;
+  margin: auto;
+}
