@@ -5,6 +5,7 @@
   height: 100%;
   width: 100%;
   color:#5e5f60;
+  display: inline-block;
 }
 
 .primary-color{
@@ -12,11 +13,11 @@
 }
 
 .banner{
-  height: 400px;
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  padding-bottom: 30px;
 }
 
 #title{
@@ -49,15 +50,254 @@
   color: #4286f4;
 }
 
+.act-btn{
+  text-decoration: none;
+  padding: 10px 40px 10px 40px;
+  color: #4286f4;
+  background-color: white;
+  border: 1px solid #4286f4;
+  border-radius: 20px;
+  margin: 40px 20px; 
+}
+
+.act-btn:hover{
+  background-color: #4286f4;
+  color: white;
+}
+
+#main-content{
+  width: 100%;
+  margin: auto;
+  background-color: whitesmoke;
+}
 .main-content{
-  height: 400px;
   width: 90%;
   margin: auto;
   background-color: whitesmoke;
 }
 
+.subtitle{
+  font-size: 40px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.dataelement{
+  width: 100%;
+  text-align: justify;
+  display: inline-block;
+}
+
+.line{
+  height: 0px;
+  border-radius: 5px;
+  position: absolute;
+  margin:0px;
+}
+.sapui5-line{
+  width: 87%;
+  border: 8px solid #30A9DE !important;
+}
+
+.fiori-line{
+  width: 65%;
+  border: 8px solid #F17F42 !important;
+}
+
+.html-line{
+  width: 60%;
+  border: 8px solid #EFDC05 !important;
+}
+
+.css-line{
+  width: 60%;
+  border: 8px solid #8CD790 !important;
+}
+
+.js-line{
+  width: 91%;
+  border: 8px solid #F6B352 !important;
+}
+
+.jq-line{
+  width: 67%;
+  border: 8px solid #F6B352 !important;
+}
+
+.ajax-line{
+  width: 90%;
+  border: 8px solid #D499B9 !important;
+}
+
+.aj-line{
+  width: 60%;
+  border: 8px solid #285943 !important;
+}
+
+.rjs-line{
+  width: 60%;
+  border: 8px solid #754F44 !important;
+}
+
+.php-line{
+  width: 65%;
+  border: 8px solid #56445D !important;
+}
+
+#project-section{
+  width: 100%;
+  background-color: #84B1ED;
+  padding-bottom: 20px;
+}
+.project-section{
+  width: 90%;
+  background-color: #84B1ED;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.project{
+  width: 100%;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.proj-title{
+  text-align: center;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-size: 22px;
+  color: white;
+  margin-top: 3px;
+}
+
+.proj-desc{
+  color: white;
+  text-align: justify;
+  margin: 10px 10px auto;
+
+}
+
+.view-demo-btn{
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  border-radius:50px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  bottom: -25px;
+}
+
+.view-demo-btn > a{
+  padding: 9px;
+  text-decoration: none;
+  color: #4286f4;
+}
+
+.view-demo-btn:hover{
+  background-color: #4286f4;
+  color: white;
+}
+
+.view-demo-btn > a:hover{
+  color: white;
+}
+
+.contact{
+  width: 90%;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.send-btn{
+  margin: auto;
+  width: 90%;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 15px 40px 15px 40px; 
+  background-color: #285943;
+  color: white;
+  border-radius: 10px;
+}
+
+#footer{
+  width: 100%;
+  background-color: #011627;
+}
+
 .footer{
-  height: 400px;
+  height: 80px;
   width: 90%;
   margin: auto;
+  background-color: #011627;
+  color: white;
+  line-height: 5em;
+  text-align: center;
+}
+
+.input{
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.txtarea{
+  width: 80%;
+  margin: 10px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+@media (max-width:900px){
+  .banner{
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image{
+    width: 40%;
+    text-align: center;
+  }
+
+  #imgprofile{
+    text-align: center;
+  }
+
+  .title{
+    font-size: 52px;
+  }
+
+  #title{
+    top:0px;
+  }
+
+  .project-section{
+    grid-template-columns: 1fr;
+  }
+
+  .act-btn{
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+  }
+}
+
+@media(min-width:1400px){
+  .project-section{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
